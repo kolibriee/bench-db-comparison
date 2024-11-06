@@ -1,0 +1,4 @@
+pg_bench:
+  goroutines_pool: 95
+  requests_amount: 2500
+  timeout: 5000ms
