@@ -11,7 +11,7 @@ This is a benchmarking tool for comparing different PostgreSQL drivers in Go. Th
 
 ## Build
 
-docker-compose build:
+docker-compose build: (only postgres)
 
 ```
 docker-compose up --build
