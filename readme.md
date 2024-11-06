@@ -34,9 +34,9 @@ config.yaml structure:
 
 ```
 pg_bench:
-  goroutines_pool: 95     # Number of concurrent workers
-  requests_amount: 10000   # Total number of requests to perform
-  timeout: 5000ms           # Benchmark timeout duration
+  goroutines_pool: 95     # Number of goroutines workers
+  requests_amount: 10000   # Total number of requests 
+  timeout: 5000ms           # Benchmark timeout 
 ```
 
 Example output:
@@ -44,15 +44,15 @@ Example output:
 ```
 Driver    | Action    | RPS       | Total requests | Err amount
 ----------|-----------|-----------|----------------|------------
-pq        | Insert    | 5234.21   | 10000         | 0
-pq        | Select    | 6123.45   | 10000         | 0
+pq        | Insert    | 5234.21   | 10000          | 0
+pq        | Select    | 6123.45   | 10000          | 0
 ----------|-----------|-----------|----------------|------------
-pgx       | Insert    | 7234.21   | 10000         | 0
-pgx       | Select    | 8123.45   | 10000         | 0
+pgx       | Insert    | 7234.21   | 10000          | 0
+pgx       | Select    | 8123.45   | 10000          | 0
 ----------|-----------|-----------|----------------|------------
-bun       | Insert    | 6234.21   | 10000         | 0
-bun       | Select    | 7123.45   | 10000         | 0
+bun       | Insert    | 6234.21   | 10000          | 0
+bun       | Select    | 7123.45   | 10000          | 0
 ----------|-----------|-----------|----------------|------------
-gorm      | Insert    | 4234.21   | 10000         | 0
-gorm      | Select    | 5123.45   | 10000         | 0
+gorm      | Insert    | 4234.21   | 10000          | 0
+gorm      | Select    | 5123.45   | 10000          | 0
 ```
